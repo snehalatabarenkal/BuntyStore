@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- bootstarp-icon-CDN -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- css-link -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Checkout</title>
+</head>
+
+<body>
+    <!-- navbar-start -->
+    <nav class="navbar navbar-light navbar-expand-lg bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex me-0" href="#"> <img src="img/logo-img.png" alt="logo" width="100">
+                <h1 class="fs-5 mt-4 fw-bold">Bunty store </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="img/logo-img.png" alt="logo"
+                            width="100">
+                        <h1 class="fs-4 mt-4 me-4 fw-bold">Bunty store </h1>
+                    </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav text-primary justify-content-center flex-grow-1 pe-3 gap-2 fw-bolder">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop by Category </a>
+                            <ul class="dropdown-menu border-0 border-top border-primary border-4 lh-lg"
+                                aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item " href="Category.html">Accessories</a></li>
+                                <li><a class="dropdown-item" href="Category.html">Cards</a></li>
+                                <li><a class="dropdown-item" href="Category.html">Clothing</a></li>
+                                <li><a class="dropdown-item" href="Category.html">Handbags</a></li>
+                                <li><a class="dropdown-item" href="Category.html">Jewelries</a></li>
+                                <li><a class="dropdown-item" href="Category.html">Office & Stationary</a></li>
+                                <li><a class="dropdown-item" href="Category.html">Toys</a></li>
+                                <li><a class="dropdown-item" href="Category.html">Wallets</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Special-Offers.html">Special Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item mb-3">
+                            <div class="input-group">
+                                <div class="form-outline" data-mdb-input-init>
+                                  <input id="search-focus" type="search" id="form1" class="form-control" placeholder="search" />
+                                </div>
+                                <button type="button" class="btn btn-primary h-50" data-mdb-ripple-init>
+                                  <i class="bi bi-search"></i>
+                                </button>
+                              </div>
+                        </li>
+                    </ul>
+                    <form class="d-flex gap-4  fs-5">
+                        <!-- <i class="bi bi-search"></i> -->
+                        <a href="cart.html" class="text-dark position-relative">
+                            <i class="bi bi-basket "></i>
+                            <span
+                                class="position-absolute top-0 start-100 ms-1 mt-1  translate-middle badge rounded-pill bg-danger">
+                                1
+                            </span>
+                        </a>
+                       <a href="wishlist.html" class="text-dark"> <i class="bi bi-heart"></i></a>
+                        <a href="Login.html" class="text-dark">
+                            <i class="bi bi-person"></i></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar-end -->
+    <section class="Breadcrumb p-3">
+        <div class="container">
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;); margin-top: 120px;"
+                aria-label="breadcrumb">
+                <h3>Checkout</h3>
+                <ol class="breadcrumb ">
+                    <li class="breadcrumb-item"><a href="index.html" class=" text-dark text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item active text-primary" aria-current="page">Checkout</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h5 class="mt-3 text-decoration-underline lh-lg">Customer information</h5>
+                    <form>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Username or Email Address *</label>
+                        </div>
+
+                        <h5 class="mt-4">Billing details</h5>
+                        <hr>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First name"
+                                    aria-label="First name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            </div>
+                        </div>
+
+                        <input class="form-control mt-4" type="text" placeholder="Company name"
+                            aria-label="default input example">
+                        <div class="form-floating mt-4">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Works with selects</label>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="House number and street name"
+                                    aria-label="First name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control"
+                                    placeholder="Apartment, suite, unit, etc. (optional)" aria-label="Last name">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-lg-4">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="floatingInputGrid"
+                                        placeholder="Town / City *" value="mdo@example.com">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelectGrid"
+                                        aria-label="Floating label select example">
+                                        <option selected>California</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <label for="floatingSelectGrid">State</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="floatingInputGrid"
+                                        placeholder="ZIP Code *" value="mdo@example.com">
+                                </div>
+                            </div>
+                        </div>
+                        <input class="form-control mt-4" type="text" placeholder="Phone *"
+                            aria-label="default input example">
+                        <h5 class="mt-4">Additional information</h5>
+                        <hr>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here"
+                                id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">Notes about your order, e.g. special notes for
+                                delivery.</label>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <input class="form-control mt-4" type="text" placeholder="Coupon code"
+                                    aria-label="default input example">
+                            </div>
+                            <div class="col-lg-5">
+                                <button type="button" name="Today-btn" class="btn btn-primary   Deal  mt-4 w-100 ">
+                                    APPLY
+                                </button>
+                            </div>
+                        </div>
+                        <h5 class="mt-3">Payment</h5>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <input type="text" class="form-control" placeholder="Cash on delivery"
+                                    aria-label="City">
+                                <input type="text" class="form-control border-top-0  rounded-start"
+                                    placeholder="Pay with cash upon delivery." aria-label="City">
+                              <a href="Login.html">
+                                    <button type="button" name="Today-btn"
+                                    class="btn btn-primary  mt-4 mb-5 p-2 Deal w-100 fw-bold "> <i class="bi bi-lock-fill"></i> Place Order
+                                </button></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-5">
+                    <h5 class="mt-3">Your order</h5>
+                    <div class="category-right-box border border-secondary">
+                        <div class="d-flex p-3 border-bottom border-secondary">
+                            <h6>Product</h6>
+                            <h6 class="ms-auto">Subtotal</h6>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="category-img">
+                                    <img src="img/wallet-02.jpg" class="w-100 p-3" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <p class="p-3">Black Real Leather Wallet × 8</p>
+                            </div>
+                            <div class="col-lg-3">
+                                <p class="p-3">$960.00</p>
+                            </div>
+                        </div>
+                        <hr class="border border-dark">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="category-img">
+                                    <img src="img/wallet-02.jpg" class="w-100 p-3" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <p class="p-3">Light Brown Real Leather Credit Card Case  × 1</p>
+                            </div>
+                            <div class="col-lg-3">
+                                <p class="p-3">$45.50</p>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="category-img">
+                                    <img src="img/wallet-02.jpg" class="w-100 p-3" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <p class="p-3">Lux Watch Leather Strap In Black
+                                     × 1</p>
+                            </div>
+                            <div class="col-lg-3">
+                                <p class="p-3">$12.90</p>
+                            </div>
+                        </div>
+                        <div class="d-flex p-3 border-top border-dark">
+                            <p>Product</p>
+                            <p class="ms-auto">Subtotal</p>
+                        </div>
+                        <div class="d-flex p-3 border-top border-dark">
+                            <h5 class="fw-bold">Total</h5>
+                            <h5 class="ms-auto fw-bold">$1,018.40</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer-section-start -->
+    <section class="footer-section mt-5 text-white pt-4 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h5 class="mb-3">Get In Touch</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                        mattis, pulvinar dapibus leo.</p>
+                    <ul class="d-flex">
+                        <li><i class="bi bi-facebook"></i></li>
+                        <li><i class="bi bi-twitter"></i></li>
+                        <li><i class="bi bi-instagram"></i></li>
+                        <li><i class="bi bi-google"></i></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="ms-5 mb-3">Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html" class="text-decoration-none text-white"><i class="bi bi-chevron-right"></i>Home</a></li>
+                        <li><a href="Category.html" class="text-decoration-none text-white"><i class="bi bi-chevron-right"></i>Shop by Category</a></li>
+                        <li><a href="Special-Offers.html" class="text-decoration-none text-white"><i class="bi bi-chevron-right"></i>
+                            Special Offers</a></li>
+                        <li><a href="contact.html" class="text-decoration-none text-white"><i class="bi bi-chevron-right"></i>Contact </a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="ms-5 mb-3">Categories</h5>
+                    <ul>
+                        <li><a href="Category.html" class="text-decoration-none text-white"><i class="bi bi-chevron-right"></i>Toys</a></li>
+                        <li><a href="Category.html" class="text-decoration-none text-white"><i class="bi bi-chevron-right"></i>Accessories</a></li>
+                        <li><a href="Category.html" class="text-decoration-none text-white"><i class="bi bi-chevron-right"></i>Handbags</a></li>
+                        <li><a href="Category.html" class="text-decoration-none text-white"><i class="bi bi-chevron-right"></a></i>Clothing</li>
+                        <li><a href="Category.html" class="text-decoration-none text-white"><i class="bi bi-chevron-right"></a></i>Wallets</li>
+                        <li><a href="Category.html" class="text-decoration-none text-white"><i class="bi bi-chevron-right"></a></i>Office & Stationary</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-3">Sign up for special offers</h5>
+                    <form>
+                        <input type="text" name="search" class="email-search p-2 w-100 fw-normal" value="Email Address">
+                        <button type="button" class="btn btn-primary mt-3 px-4 py-2">Shop Now</button>
+                    </form>
+                </div>
+            </div>
+
+            <hr>
+            <p class="text-center">Copyright © 2009 - 2024 Bunty Store</p>
+        </div>
+
+    </section>
+    <!-- footer-section-end -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+</body>
+
+</html>

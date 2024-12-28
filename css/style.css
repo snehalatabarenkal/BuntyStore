@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #013059;
+  --main-light-color: #FFF;
+  --main-dark-color: #0D8ED6;
+  --header-color: #FB3E3E;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+  color: var(--main-dark-color);
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav  .nav-link:hover {
+  color: var(--main-dark-color);
+}
+.dropdown-item:hover{
+  color: var(--main-dark-color);
+background-color: transparent;
+}
+.sale-hero{
+  font-size: 4rem;
+}
+h1{
+  color: var(--main-color);
+}
+
+h2 {
+  color: var(--main-dark-color);
+  font-size: 3rem;
+}
+
+.hero-section {
+  background-image: url('../img/hero-img.jpg');
+  height: 100vh;
+}
+
+.Categories .categories-box {
+  background-color: rgba(13, 142, 214, 0.03);
+  height: 270px;
+}
+
+.Categories .box-2 {
+  background-color: #FBEEC0;
+}
+
+.Categories .box-3 {
+  background-color: #FFE1D5;
+}
+
+.Categories .box-4 {
+  background-color: #FCF7C5;
+}
+
+.Categories .box-6 {
+  background-color: #DDECFF;
+}
+.Product-Category-item ul li{
+  list-style: none;
+}
+.specifyColor{
+  accent-color: red;
+}
+#file{
+  width: 35%;
+  height: 20px;
+}
+.body-bg{
+  background-color: rgba(13, 142, 214, 0.03);
+}
+.Product-Category-item ul li .star-icon .bi-star-fill{
+  font-size: .60rem;
+  color: gold;
+ }
+
+.Today {
+  background-image: url('../img/bg-01.jpg');
+  height: auto;
+}
+
+.Today h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.Today h6 {
+  font-size: 1.30rem;
+  color: var(--main-color);
+}
+
+.Deal {
+  background-color: var(--main-color);
+  border: none;
+}
+
+.special-left-img {
+  background-image: url('../img/bg-04.jpg');
+}
+
+.special-right-img {
+  background-image: url('../img/bg-02.jpg');
+}
+
+.special-bottom-img {
+  background-image: url('../img/bg-03.jpg');
+}
+
+.border-dashed {
+  border-right: 1px dashed black;
+}
+
+.birthday-gift {
+  background-image: url('../img/birthday.jpg');
+}
+
+.Anniversary {
+  background-image: url('../img/anniversary.jpg');
+}
+
+.Graduations-Gifts {
+  background-image: url('../img/graduation.jpg');
+}
+
+.Holidays-Gifts {
+  background-image: url('../img/holidays.jpg');
+}
+
+.birthday-gift,
+.Anniversary,
+.Graduations-Gifts,
+.Holidays-Gifts,
+.special-bottom-img,
+.special-right-img,
+.special-left-img,
+.Today,
+.hero-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+}
+.service-bg{
+  background-color: #98d8fa;
+}
+.service-bg:hover{
+  background-color: var(--main-color);
+  color: white !important;
+}
+.service-bg p{
+font-size: 0.80rem;
+}
+.footer-section{
+  background-color: var(--main-color);
+}
+.footer-section ul li{
+list-style: none;
+}
+.footer-section ul li i{
+  margin-inline: 10px;
+}
+.Breadcrumb{
+  background-color: rgba(13, 142, 214, 0.14);
+}
+
+.contact,.login-form,.single-page{
+  margin-top: 130px;
+}
+.border-contact{
+  border-bottom: 5px solid var(--main-color);
+  width: 50px;
+}
+.form-outline i {
+ margin: -32px 20px;
+ color: rgba(121, 121, 121, 0.77);
+}
+.form-outline .form-control{
+  background-color: rgba(217, 217, 217, 0.1);
+}
+
+.img-bg img{
+  transition-duration: 1s;
+  margin: 0 auto;
+  display: block;
+}
+.img-bg img:hover{
+  transform: scale(1.2);
+z-index: 0;
+}
+
+.img-bg {
+	position: relative;
+	display: inline-block;
+}
+
+.img-bg:hover .edit {
+	display: block;
+}
+
+.edit {
+    padding: 5px;
+    position: absolute;
+    right: 7px;
+    top: 8px;
+    display: none;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.edit a {
+	color: #000;
+}
+
+@media screen and (orientation: landscape) {
+  .carousel img {
+    height: 90vh;
+   margin-top: 100px;
+  }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .border-dashed {
+    border-bottom: 1px dashed black;
+    border-right: none;
+  }
+  .carousel img {
+    height: 100vh;
+
+  }
+}

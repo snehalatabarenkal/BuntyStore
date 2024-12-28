@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- bootstarp-icon-CDN -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- css-link -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <!-- navbar-start -->
+    <nav class="navbar navbar-light navbar-expand-lg bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex me-0" href="#"> <img src="img/logo-img.png" alt="logo" width="100">
+                <h1 class="fs-5 mt-4 fw-bold">Bunty store </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="img/logo-img.png" alt="logo"
+                            width="100">
+                        <h1 class="fs-4 mt-4 me-4 fw-bold">Bunty store </h1>
+                    </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav text-primary justify-content-center flex-grow-1 pe-3 gap-2 fw-bolder">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop by Category </a>
+                            <ul class="dropdown-menu border-0 border-top border-primary border-4 lh-lg"
+                                aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item " href="Category.html">Accessories</a></li>
+                                <li><a class="dropdown-item" href="Category.html">Cards</a></li>
+                                <li><a class="dropdown-item" href="Category.html">Clothing</a></li>
+                                <li><a class="dropdown-item" href="Category.html">Handbags</a></li>
+                                <li><a class="dropdown-item" href="Category.html">Jewelries</a></li>
+                                <li><a class="dropdown-item" href="Category.html">Office & Stationary</a></li>
+                                <li><a class="dropdown-item" href="Category.html">Toys</a></li>
+                                <li><a class="dropdown-item" href="Category.html">Wallets</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Special-Offers.html">Special Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item mb-3">
+                            <div class="input-group">
+                                <div class="form-outline" data-mdb-input-init>
+                                  <input id="search-focus" type="search" id="form1" class="form-control" placeholder="search" />
+                                </div>
+                                <button type="button" class="btn btn-primary h-50" data-mdb-ripple-init>
+                                  <i class="bi bi-search"></i>
+                                </button>
+                              </div>
+                        </li>
+                    </ul>
+                    <form class="d-flex gap-4  fs-5">
+                        <!-- <i class="bi bi-search"></i> -->
+                        <a href="cart.html" class="text-dark position-relative">
+                            <i class="bi bi-basket "></i>
+                            <span
+                                class="position-absolute top-0 start-100 ms-1 mt-1  translate-middle badge rounded-pill bg-danger">
+                                1
+                            </span>
+                        </a>
+                       <a href="wishlist.html" class="text-dark"> <i class="bi bi-heart"></i></a>
+                        <a href="Login.html" class="text-dark">
+                            <i class="bi bi-person"></i></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar-end -->
+    <section class="Breadcrumb p-3">
+        <div class="container">
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;); margin-top: 120px;"
+                aria-label="breadcrumb">
+                <h3>Cart</h3>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class=" text-dark text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item active text-primary" aria-current="page">Cart</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="card-box py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card-box border border-secondary p-3">
+                        <div class="row ">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-3">
+                                <h6>Product</h6>
+                            </div>
+                            <div class="col-lg-2">
+                                <h6>Price</h6>
+                            </div>
+                            <div class="col-lg-2 ">
+                                <h6>Quantity</h6>
+                            </div>
+                            <div class="col-lg-3 mx-auto ">
+                                <h6 class="ms-3">Subtotal</h6>
+                            </div>
+                            <hr class="mt-2">
+
+                        </div>
+                        <div class="row pt-2">
+                            
+                            <div class="col-lg-2">
+                                <img src="img/wallet-02.jpg" class="w-50 ms-4" alt="">
+
+                            </div>
+                            <div class="col-lg-3">
+                                <p>Black Real Leather Wallet </p>
+                            </div>
+                            <div class="col-lg-1">
+                                <p>$960.00</p>
+                            </div>
+                            <div class="col-lg-2  mx-auto">
+                                <div class="card" style="width: 7rem; height: 40px;">
+                                    <div class="card-body d-flex" style="margin-top: -10px;">
+                                        <i class="bi bi-dash fw-bold me-2 fs-5"></i> <span
+                                            class="fw-bold fs-5 ms-2">1</span> <i
+                                            class="bi bi-plus fw-bold float-end fs-5 ms-3"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 me-auto">
+                                <p>$960.00</p>
+                            </div>
+                            <div class="col-lg-1">
+                                <i class="bi bi-x-square-fill py-5 fs-3 me-2  text-danger "></i>
+
+                            </div>
+                        </div>
+                        <div class="row pt-2">
+                           
+                            <div class="col-lg-2">
+                                <img src="img/wallet-02.jpg" class="w-50 ms-4" alt="">
+
+                            </div>
+                            <div class="col-lg-3">
+                                <p>Black Real Leather Wallet </p>
+                            </div>
+                            <div class="col-lg-1">
+                                <p>$960.00</p>
+                            </div>
+                            <div class="col-lg-2  mx-auto">
+                                <div class="card" style="width: 7rem; height: 40px;">
+                                    <div class="card-body d-flex" style="margin-top: -10px;">
+                                        <i class="bi bi-dash fw-bold me-2 fs-5"></i> <span
+                                            class="fw-bold fs-5 ms-2">1</span> <i
+                                            class="bi bi-plus fw-bold float-end fs-5 ms-3"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 me-auto  ">
+                                <p>$960.00</p>
+                            </div>
+                            <div class="col-lg-1">
+                                <i class="bi bi-x-square-fill py-5 fs-3 me-2 text-danger"></i>
+
+                            </div>
+                        </div>
+                        <div class="row pt-2">
+                            
+                            <div class="col-lg-2">
+                                <img src="img/wallet-02.jpg" class="w-50 ms-4" alt="">
+
+                            </div>
+                            <div class="col-lg-3">
+                                <p>Black Real Leather Wallet </p>
+                            </div>
+                            <div class="col-lg-1">
+                                <p>$960.00</p>
+                            </div>
+                            <div class="col-lg-2  mx-auto">
+                                <div class="card" style="width: 7rem; height: 40px;">
+                                    <div class="card-body d-flex" style="margin-top: -10px;">
+                                        <i class="bi bi-dash fw-bold me-2 fs-5"></i> <span
+                                            class="fw-bold fs-5 ms-2">1</span> <i
+                                            class="bi bi-plus fw-bold float-end fs-5 ms-3"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 me-auto  ">
+                                <p>$960.00</p>
+                            </div>
+                            <div class="col-lg-1">
+                                <i class="bi bi-x-square-fill py-5 fs-3 me-2 text-danger"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a href="Category.html" class="text-dark text-decoration-none"><h6 class="p-5"><i class="bi bi-chevron-left"></i> Continue Shopping</h6></a>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card-right-box border border-secondary p-3">
+                        <!-- <h4>Cart Total</h4>
+                        <select class="form-select bg-light rounded-pill text-secondary border-0 mt-3"
+                            aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select> -->
+
+                        <!-- <div class="d-flex gap-2">
+                            <select class="form-select bg-light rounded-pill text-secondary border-0 mt-3 w-50"
+                                aria-label="Default select example">
+                                <option selected>State / City</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <input type="text"
+                                class="form-control bg-light rounded-pill text-secondary border-0 mt-3 w-50"
+                                placeholder="ZIP Code" id="inputZip">
+                        </div> -->
+                        <!-- <button type="button" name="Today-btn"
+                            class="btn btn-primary px-4 py-2 mt-4 Deal w-100 rounded-pill "> Update
+                        </button>
+                        <hr> -->
+                        <h5>Coupon Code</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta justo nibh</p>
+                        <input type="text" class="form-control bg-light rounded-pill text-secondary border-0 mt-3 w-100"
+                            placeholder="Coupon Code" id="inputZip">
+                        <button type="button" name="Today-btn"
+                            class="btn btn-primary px-4 py-2 mt-4 Deal w-100 rounded-pill "> Apply
+                        </button>
+                        <div class="Cart-Total-box Breadcrumb rounded-3 p-3 mt-3">
+                            <h4>Cart Total</h4>
+                            <div class="d-flex mt-3">
+                                <h6> Subtotal</h6>
+                                <p class="ms-auto">$1,018.4</p>
+                            </div>
+                            <div class="d-flex ">
+                                <h6> Extimated Delivery</h6>
+                                <p class="ms-auto">Free</p>
+                            </div>
+                            <hr>
+                            <div class="d-flex ">
+                                <h5 class="fw-bold">Total</h5>
+                                <p class="ms-auto fw-bold">$1,018.40</p>
+                            </div>
+                            <a href="Checkout.html">
+                            <button type="button" name="Today-btn"
+                                class="btn btn-primary px-4 py-2 mt-2 Deal w-100 rounded-pill "> Proceed to checkout
+                            </button></a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer-section-start -->
+    <section class="footer-section mt-5 text-white pt-4 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h5 class="mb-3">Get In Touch</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                        mattis, pulvinar dapibus leo.</p>
+                    <ul class="d-flex">
+                        <li><i class="bi bi-facebook"></i></li>
+                        <li><i class="bi bi-twitter"></i></li>
+                        <li><i class="bi bi-instagram"></i></li>
+                        <li><i class="bi bi-google"></i></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="ms-5 mb-3">Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html" class="text-decoration-none text-white"><i class="bi bi-chevron-right"></i>Home</a></li>
+                        <li><a href="Category.html" class="text-decoration-none text-white"><i class="bi bi-chevron-right"></i>Shop by Category</a></li>
+                        <li><a href="Special-Offers.html" class="text-decoration-none text-white"><i class="bi bi-chevron-right"></i>
+                            Special Offers</a></li>
+                        <li><a href="contact.html" class="text-decoration-none text-white"><i class="bi bi-chevron-right"></i>Contact </a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="ms-5 mb-3">Categories</h5>
+                    <ul>
+                        <li><a href="Category.html" class="text-decoration-none text-white"><i class="bi bi-chevron-right"></i>Toys</a></li>
+                        <li><a href="Category.html" class="text-decoration-none text-white"><i class="bi bi-chevron-right"></i>Accessories</a></li>
+                        <li><a href="Category.html" class="text-decoration-none text-white"><i class="bi bi-chevron-right"></i>Handbags</a></li>
+                        <li><a href="Category.html" class="text-decoration-none text-white"><i class="bi bi-chevron-right"></a></i>Clothing</li>
+                        <li><a href="Category.html" class="text-decoration-none text-white"><i class="bi bi-chevron-right"></a></i>Wallets</li>
+                        <li><a href="Category.html" class="text-decoration-none text-white"><i class="bi bi-chevron-right"></a></i>Office & Stationary</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-3">Sign up for special offers</h5>
+                    <form>
+                        <input type="text" name="search" class="email-search p-2 w-100 fw-normal" value="Email Address">
+                        <button type="button" class="btn btn-primary mt-3 px-4 py-2">Shop Now</button>
+                    </form>
+                </div>
+            </div>
+
+            <hr>
+            <p class="text-center">Copyright © 2009 - 2024 Bunty Store</p>
+        </div>
+
+    </section>
+    <!-- footer-section-end -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+</body>
+
+</html>
