@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: html-container
-        image: html-site:v1   # 👈 Jenkins will update this
+        image: snehalatabarenkal/snehalata/html-site:v1  
         ports:
         - containerPort: 80
 ---
@@ -29,4 +29,4 @@ spec:
   - protocol: TCP
     port: 80
     targetPort: 80
-  type: LoadBalancer  # So it's accessible via public IP
+  type: LoadBalancer  
