@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: html-container
-        image: snehalatabarenkal/snehalata/html-site:v1  
+        image: snehalatabarenkal/html-site:v1  
         ports:
         - containerPort: 80
 ---
