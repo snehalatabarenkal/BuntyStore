@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: html-container
-        image: snehalata/html-site:v1   # 👈 Jenkins will update this
+        image: html-site:v1   # 👈 Jenkins will update this
         ports:
         - containerPort: 80
 ---
