@@ -1,4 +1,3 @@
-
 pipeline {
     agent any
 
@@ -35,14 +34,14 @@ pipeline {
         stage('Build & Tag Docker Image') {
             steps {
                 script {
-                    docker.build('snehalatabarenkal/snehalata/html-site:v1')
+                    docker.build('snehalatabarenkal/html-site:v1')
                 }
             }
         }
 
         stage('Scan Docker Image with Trivy') {
             steps {
-                sh 'trivy image --format table -o image-report.html snehalatabarenkal/snehalata/html-site:v1 || true'
+                sh 'trivy image --format table -o image-report.html snehalatabarenkal/html-site:v1 || true'
             }
         }
 
@@ -50,7 +49,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'dockerhub') {
-                        sh 'docker push snehalatabarenkal/snehalata/html-site:v1'
+                        sh 'docker push snehalatabarenkal/html-site:v1'
                     }
                 }
             }
@@ -63,3 +62,4 @@ pipeline {
         }
     }
 }
+
