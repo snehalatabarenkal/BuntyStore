@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone HTML Repo') {
             steps {
-                git 'https://github.com/snehalatabarenkal/BuntyStore.git'
+                git branch: 'main', url: 'https://github.com/snehalatabarenkal/BuntyStore.git'
             }
         }
 
@@ -12,9 +12,11 @@ pipeline {
             steps {
                 sh '''
                     echo "Starting Python HTTP Server..."
+                    cd $WORKSPACE
                     nohup python3 -m http.server 8081 &
                 '''
             }
         }
     }
 }
+
